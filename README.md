@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://imgur.com/JTSUA2D' title='Tip Calculator' />
+<img src='http://i.imgur.com/JTSUA2D.gifv' title='Tip Calculator' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -36,7 +36,7 @@ Had some trouble implementing a custom option.
 
 ## License
 
-    Copyright [2016] [Omar Syed]
+    Copyright 2016 Omar Syed
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
