@@ -31,19 +31,29 @@
 
     <h1> Output </h1>
     <?php
-      $tip = $subtotal * $percentage;
-      $total = $subtotal + $tip;
-      echo "Tip: $".round($tip, 2);
-      if ($split > 1){
-        echo "<br>";
-        $totaleach = $total/$split;
-        $split1 = $tip/$split;
-        echo "Tip each: $".round($split1,2);
-        echo "<br>";
-        echo "Total each: $".round($totaleach, 2);
+    if ($subtotal < 0){
+      echo "Cannot compute value";
+    }
+    else{
+      if ($split < 0){
+        echo "Cannot have negative split";
       }
-      echo "<br>";
-      echo "Total: $".round($total, 2);
+      else{
+        $tip = $subtotal * $percentage;
+        $total = $subtotal + $tip;
+        echo "Tip: $".round($tip, 2);
+        if ($split > 1){
+          echo "<br>";
+          $totaleach = $total/$split;
+          $split1 = $tip/$split;
+          echo "Tip each: $".round($split1,2);
+          echo "<br>";
+          echo "Total each: $".round($totaleach, 2);
+        }
+        echo "<br>";
+        echo "Total: $".round($total, 2);
+      }
+    }
     ?>
   </form>
 </body>
