@@ -1,9 +1,15 @@
 <DOCTYPE! html>
 <html>
 <head>
+<style>
+h1 {color: blue;}
+body {color: red;}
+div {background-color: yellow;}
+div{width: 300px;}
+</style>
 <title> Tip Calculator </title>
 </head>
-<div id="Calculator">
+<div>
 <body>
   <h1> Tip Calculator </h1>
   <form method = "post" action= "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
